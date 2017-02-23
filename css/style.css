@@ -141,6 +141,28 @@ nav {
 #botaoMobile span{
     background-color: #9B8CBA;
 }
+
+/* -------------- Footer ------------- */
+footer{
+    background-image: url("../img/background.jpg");
+    color: #868686;
+    font-family: "Open Sans", sans-serif;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: left;
+    padding: 15px;
+}
+footer span{
+    position: relative;
+    top: 40px;
+}
+footer span a{
+    color: #FE9582;
+}
+footer img{
+    float: right;
+    padding: 5px; 
+}
 /* -------------- Media Queries ------------- */
 /* Mobile */
 @media (max-width: 320px){
@@ -170,6 +192,10 @@ nav {
     .explicacaoCards{padding: 0;}
     #desktop, #tablet, #mobile{padding:15px 0;}
     .card{padding: 0;}
+    footer span{float: center; display:block; text-align: center; top:5px;}
+    footer span a{color:#9B8CBA;}
+    footer img{float:none; position: relative; left: 32.5%;top:10px;}
+    footer{height: 150px;}
 }
 
 /* Tablets */
@@ -185,6 +211,7 @@ nav {
     .chamada{width: 100%;}
     .card{display: inline-block; float: none; width: 100%; margin:0;}
     .explicacaoCards{ background: #FCDA92;}
+    footer span a{color:#FCDA92;}
 }
 
 /* Desktop 1 */
