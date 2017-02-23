@@ -108,13 +108,13 @@ nav {
     font-weight: 800;
 }
 #desktop h2, #tablet h2, #mobile h2{
-    margin: 5px 0 10px;
+    margin: 10px 0 10px;
 }
 #desktop span, #tablet span, #mobile span{
     text-transform: uppercase;
 }
 #desktop img, #tablet img, #mobile img {
-    width: 75%;
+    width: 50%;
     margin: 10px;
 }
 .legenda{
@@ -187,7 +187,7 @@ footer img{
     .chamada h2{font-size:18px;}
     .card{display: inline-block; float: none; width: 100%; margin:0;}
     .chamada{position: relative; top: 0; height:275px; padding-top:10px;}
-    #desktop img, #tablet img, #mobile img {width: 50%; margin: 0;}
+    #desktop img, #tablet img, #mobile img {width: 25%; margin: 0;}
     .legenda{display: none;}
     .explicacaoCards{padding: 0;}
     #desktop, #tablet, #mobile{padding:15px 0;}
@@ -205,13 +205,14 @@ footer img{
     nav {width: 100%; display: inline; text-align: center; margin: 0; position: relative; top: 0;}
     .nav-list{padding: 0; margin: 0;}
     .nav-item a:hover{color:#fff;}
-    .chamada h1{color: #FCDA92; font-size:45px;}
+    .chamada h1{color: #9B8CBA; font-size:45px;}
     .chamada span{font-size:45px;}
     .chamada h2{font-size:23px;}
     .chamada{width: 100%;}
     .card{display: inline-block; float: none; width: 100%; margin:0;}
-    .explicacaoCards{ background: #FCDA92;}
-    footer span a{color:#FCDA92;}
+    .explicacaoCards{ background: #9B8CBA;}
+    #desktop img, #tablet img, #mobile img {width: 25%;}
+    footer span a{color:#9B8CBA;}
 }
 
 /* Desktop 1 */
