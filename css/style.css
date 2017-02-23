@@ -1,0 +1,202 @@
+/* --------- Informações Gerais ---------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+.row{
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+/* Tirar marcadores e sublinhado de link */
+a, a:hover {
+	text-decoration:none;
+}
+ul, ol {
+	list-style:none;
+}
+
+/* ------------ Header ---------- */
+header{
+    background-image: url("../img/background.jpg");
+    border-bottom: 1px solid #E0E0E0;
+    height: 175px;
+    padding: 0px 0px 30px;
+}
+header img{
+    float: left;
+    margin: 15px;
+}
+nav {
+    float: right;
+    text-align: right;
+    margin: 0 15px;
+    position: relative;
+    top: 115px;
+}
+.nav-item {
+	display:inline;
+}
+.nav-item a {
+    color: #999;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    display: inline-block;
+	padding:0px 10px;
+}
+
+/* ------------ Chamada ---------- */
+.chamada{
+    background-image: url("../img/background.jpg");    
+    text-align: center;
+    padding: 0 30px 15px;
+}
+.chamada h1{
+    color: #FE9380;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -3px;
+    line-height: 60px;
+}
+.chamada span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+.chamada h2{
+    font-weight: 800;
+    color: #999;
+}
+/* -------------- Cards de Explicação ------------- */
+.explicacaoCards{
+    background-color: #FE9582;
+    padding: 25px 0;
+}
+.card{
+    display: block;
+    margin: 5px 0;
+}
+#desktop{
+    background-color: #FE9582;
+}
+#tablet{
+    background-color: #FCDA92;
+}
+#mobile{
+    background-color: #9B8CBA;
+}
+#desktop, #tablet, #mobile {
+    text-align: center;
+    width: 100%;
+    height: 100%;;
+    color: #fff;
+    font-weight: 800;
+}
+#desktop h2, #tablet h2, #mobile h2{
+    margin: 5px 0 10px;
+}
+#desktop span, #tablet span, #mobile span{
+    text-transform: uppercase;
+}
+#desktop img, #tablet img, #mobile img {
+    width: 75%;
+    margin: 10px;
+}
+.legenda{
+    background: #fff;
+    font-weight: 800;
+    color: #999;
+    height: 100%;
+    padding: 15px 15px 45px;
+}
+.legenda p{
+    margin: 5px 0;
+}
+#botaoDesktop span, #botaoTablet span, #botaoMobile span{
+    color: #fff;
+    padding: 5px 10px;
+    float: right;
+}
+#botaoDesktop span{
+    background-color: #FE9582;
+}
+#botaoTablet span{
+    background-color: #FCDA92;
+}
+#botaoMobile span{
+    background-color: #9B8CBA;
+}
+/* -------------- Media Queries ------------- */
+/* Mobile */
+@media (max-width: 320px){
+    header{text-align: center;}
+    .nav-item a {background:#B4F0E9; font-weight: 300;}
+    .nav-item a:hover {background:#7CE2D7;}
+    .chamada h1{color: #7CE2D7; font-size:28px;}
+    .chamada span{font-size:28px;}
+    .chamada h2{font-size:11px;}
+}
+
+/* Mobile Landscape */
+@media only screen and (max-device-width: 768px){
+    header{text-align: center;}
+    header img{float: none; padding-bottom: 15px; }
+    nav {width: 100%; display: inline; text-align: center; margin: 0;position: relative; top: 15%;}
+    .nav-list{padding: 0; margin: 0;}
+    .nav-item a {display:block; font-weight: 300; padding:5px 0; color:#fff; background:#9B8CBA;}
+    .nav-item a:hover {background:#756099;}
+    .chamada h1{font-size:36px; color: #756099;}
+    .chamada span{font-size:36px;}
+    .chamada h2{font-size:18px;}
+    .card{display: inline-block; float: none; width: 100%; margin:0;}
+    .chamada{position: relative; top: 0; height:275px; padding-top:10px;}
+    #desktop img, #tablet img, #mobile img {width: 50%; margin: 0;}
+    .legenda{display: none;}
+    .explicacaoCards{padding: 0;}
+    #desktop, #tablet, #mobile{padding:15px 0;}
+    .card{padding: 0;}
+}
+
+/* Tablets */
+@media only screen and (max-device-width: 992px){
+    header{text-align: center; height: 200px;}
+    header img{float: none;}
+    nav {width: 100%; display: inline; text-align: center; margin: 0; position: relative; top: 0;}
+    .nav-list{padding: 0; margin: 0;}
+    .nav-item a:hover{color:#FCDA92;}
+    .chamada h1{color: #FCDA92; font-size:45px;}
+    .chamada span{font-size:45px;}
+    .chamada h2{font-size:23px;}
+    .chamada{width: 100%;}
+    .card{display: inline-block; float: none; width: 100%; margin:0;}
+    .explicacaoCards{ background: #FCDA92;}
+}
+
+/* Desktop 1 */
+@media (min-width: 992px) and (max-width: 1200px){
+    .nav-item a:hover{color:#FE9582;}
+    .chamada h1{color: #FE9380; font-size:52px;}
+    .chamada span{font-size:52px;}
+    .chamada h2{font-size:28px;}
+}
+
+/* Desktop 2 */
+@media (min-width: 1200px){
+    .nav-item a:hover{color:#FE9582;}
+    .chamada h1{color: #FE9380;}
+}
